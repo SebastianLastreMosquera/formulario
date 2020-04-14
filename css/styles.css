@@ -1,0 +1,36 @@
+:root{
+
+    --fondo:greenyellow;
+}
+body{
+    background: var(--fondo);
+}
+
+.contenedor-personas{
+
+    border: 1px red solid;
+    margin: 10px 400px 10px 400px;    
+
+}
+form{
+    margin: 10px 80px 1px 1px;
+}
+
+input{margin: 5px; padding: 5px;}
+
+.lista{
+    border: 1px red solid;
+    height: 100px;
+    width: 500px;
+    background: sandybrown;
+}
+
+.none{
+    display: none;
+}
+
+button{
+    margin: 20px;
+    padding: 10px;
+}
+
