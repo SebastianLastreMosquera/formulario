@@ -1,36 +1,108 @@
-:root{
-
-    --fondo:greenyellow;
+:root {
+	--fondo: #004445;
+	--boton-azul:#0779e4;
+	--boton-azul-oscuro:#2e279d;
+	--boton-dark:#393e46;
+	--boton-dark-oscuro:#222831;
+	--boton-rojo:#ff5722;
+	--boton-rojo-oscuro:#dd2c00;
+	--color-boton: aliceblue;
 }
-body{
-    background: var(--fondo);
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
-
+body {
+	background: var(--fondo);
+	color: aliceblue;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+}
+.contenedor{
+	border: 1px red solid;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
 .contenedor-personas{
-
-    border: 1px red solid;
-    margin: 10px 400px 10px 400px;    
+	background-color: #2c786c;
+	color: aliceblue;
+	width: 800px;
+	height: 500px;
+	border-radius: 20px;
+}
+.grupo-formulario{
+	border: 0px red solid;
+	padding: 10px;
+	margin: 5px;
+}
+.label-formulario{
+	/* border: 1px blue solid; */
+	min-width: 150px;
+	display: inline-block;
 
 }
-form{
-    margin: 10px 80px 1px 1px;
+.input-formulario{
+	/* border: 1px yellow solid;	 */
+	padding: 5px;
+	width: 70%;
+	height: 30px;
+	font-size: 25px;
+	border: none;
+	border-radius:3px ;
+}
+.titulo{
+	text-align: center;
+	padding: 10px;
+}
+.contenedor-botones{
+	display: flex;
+	justify-content: center;
+	margin: 15px;
 }
 
-input{margin: 5px; padding: 5px;}
-
-.lista{
-    border: 1px red solid;
-    height: 100px;
-    width: 500px;
-    background: sandybrown;
+.boton{
+	height: 35px;
+	min-width: 100px;
+	font-size: 20px;
+	padding: 5px;
+	border: none;
+	margin: 10px;
+	border-radius: 7px;
+	cursor: pointer;
 }
 
-.none{
-    display: none;
+.boton-azul{
+	background-color:var(--boton-azul);
+	color:var(--color-boton);
+}
+.boton-azul:hover{
+	background-color:var(--boton-azul-oscuro);
+}
+.boton-dark{
+	background-color: var(--boton-dark);
+	color:var(--color-boton)
+}
+.boton-dark:hover{
+	background-color:var(--boton-dark-oscuro);
+}
+.boton-rojo{
+	background-color: var(--boton-rojo);
+	color:var(--color-boton)
+}
+.boton-rojo:hover{
+	background-color:var(--boton-rojo-oscuro);
 }
 
-button{
-    margin: 20px;
-    padding: 10px;
+.tabla{
+	width: 600px;
+	margin: 10px auto;
 }
 
+tr{
+	background: var(--boton-dark);
+	border: 1px red solid;
+	height: 35px;
+}

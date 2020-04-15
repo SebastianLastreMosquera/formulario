@@ -14,30 +14,51 @@ require_once('conexion.php');
 </head>
 
 <body>
-	<h1>HOLA ESTA ES MI PAGINA</h1>
+	<div class="contenedor">
+		<div class="contenedor-personas ">
+		<div id="listado" >	
+			<table class="tabla">
+				<thead class="tabla-thead">
+					<tr class="tabla-tr">
+						<th class="tabla-th">Nombre</th>
+						<th class="tabla-th">Apellidos</th>
+						<th class="tabla-th">Telefono</th>			
+					</tr class="tabla-tr">
+				</thead>
+				<tbody id="listar-personas">
+					
+				</tbody>
+			</table>
+		</div>
 
-	<div id="listado">	
-	</div>
+		<form action="guardar.php" method="post" id="formulario" autocomplete="off" class="none">
+			<div >
+					<h4 class="titulo">REGISTRAR PERSONA</h4>
+			</div>
+			<div class="grupo-formulario">
+				<label for="nombre" class="label-formulario">Nombre</label>
+				<input type="text"  class="input-formulario" name="nombre" id="nombre"> <br>
+			</div>
 
-	<div class="contenedor-personas ">
-	<form action="guardar.php" method="post" id="formulario" autocomplete="off" class="none">
-		<div>
-        <h6>REGISTRAR PERSONA</h6>
-    </div>
-		<label for="nombre">nombre</label>
-		<input type="text" name="nombre" id="nombre"> <br>
+			<div class="grupo-formulario">
+				<label for="apellido"  class="label-formulario">Apellido</label>
+				<input type="text" class="input-formulario" name="apellido" id="apellido"><br>
+			</div>
 
-		<label for="apellido">apellido</label>
-		<input type="text" name="apellido" id="apellido"><br>
+			<div class="grupo-formulario">
+				<label for="telefono" class="label-formulario">Telefono </label>
+				<input type="text" class="input-formulario" name="telefono" id="telefono">
+			</div>
+		</form>
 
-		<label for="telefono">telefono </label>
-		<input type="text" name="telefono" id="telefono">
-	</form>
-	<button id="btn-guardar"style="display:none">agregar</button>
-	<button id="btn-mostrar" value="mostrar">mostrar</button>
-	<button id="btn-ocultar" value="ocultar">ocultar</button>	
-	</div>
-	
+		<div class="contenedor-botones">
+			<button id="btn-guardar" class="boton boton-azul" style="display:none">Agregar</button>
+			<button id="btn-mostrar" class="boton boton-dark" value="mostrar">Mostrar</button>
+			<button id="btn-ocultar" class="boton boton-rojo" value="ocultar">Ocultar</button>
+		</div>	 
+
+	</div> 
+</div>
 <script src="js/js.js"></script>
 </body>
 
